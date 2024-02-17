@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0; /* Set a background color if needed */
+            font-family: 'Arial', sans-serif;
+        }
+
+        #loginwrappers {
+            text-align: center;
+        }
+
+        #loginwrapper {
+            background-color: #ffffff;
+            width: 400px; /* Set your desired width */
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            color: #1877f2; /* Facebook blue color */
+        }
+
+        .forms {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            box-sizing: border-box;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            outline: none;
+        }
+
+        button {
+            background-color: #1877f2;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        button:hover {
+            background-color: #0e5a9a; /* Darker blue on hover */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="loginwrappers">
+        <div id="loginwrapper">
+            <h1>Login Form</h1>
+            <form action="/login" method="post">
+                <input required type="email" placeholder="Email Address" class="forms" name="Email" size="30"><br><br>
+                <input required type="password" placeholder="Password" class="forms" name="Password" size="30"><br><br>
+                <button>Login</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
